@@ -39,6 +39,8 @@ def load_classifier():
 
 def preprocess_image(img):
     """Preprocess the uploaded image for model prediction"""
+    # Convert image to RGB if it's not already
+    img = img.convert('RGB')
     # Resize image to 224x224
     img = img.resize((224, 224))
     # Convert to array and preprocess
