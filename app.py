@@ -57,7 +57,7 @@ def main():
     # Load model
     try:
         model = load_classifier()
-        st.success("Model loaded successfully!")
+        st.success("Model Siap Digunakan!")
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
         return
