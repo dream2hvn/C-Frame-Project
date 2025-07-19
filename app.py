@@ -79,7 +79,7 @@ def main():
                     
                     # Make prediction
                     prediction = model.predict(processed_img)
-                    class_names = ['Categorized', 'Uncategorized']
+                    class_names = ['Star Seller', 'Underrated', 'Random Pictures']
                     predicted_class = class_names[np.argmax(prediction)]
                     confidence = np.max(prediction) * 100
 
@@ -91,11 +91,13 @@ def main():
                     st.progress(float(confidence) / 100)
 
                     # Additional information based on prediction
-                    if predicted_class == 'Categorized':
-                        st.success("This image appears to be well-categorized!")
+                    if predicted_class == 'Star Seller':
+                        st.success("This item is categorized as a Star Seller ⭐")
+                    elif predicted_class == 'Underrated':
+                        st.info("This item is considered Underrated 🔍")
                     else:
-                        st.warning("This image might need proper categorization.")
-
+                        st.warning("This is a Random Picture 📷 – may not belong to a specific category.")
+                        
         except Exception as e:
             st.error(f"Error processing image: {str(e)}")
             st.write("Please make sure you upload a valid image file.")
