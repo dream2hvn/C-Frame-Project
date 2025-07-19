@@ -52,7 +52,7 @@ def preprocess_image(img):
 def main():
     # Header
     st.title("C-Frame Image Classifier 🖼️")
-    st.write("Upload an image to classify it as Categorized or Uncategorized")
+    st.write("Upload Gambar Untuk Mendapatkan Hasil prediksi")
 
     # Load model
     try:
@@ -79,7 +79,7 @@ def main():
                     
                     # Make prediction
                     prediction = model.predict(processed_img)
-                    class_names = ['Categorized', 'Uncategorized']
+                    class_names = ['Star Seller', 'Underrated']
                     predicted_class = class_names[np.argmax(prediction)]
                     confidence = np.max(prediction) * 100
 
@@ -104,8 +104,8 @@ def main():
     with st.expander("About this app"):
         st.write("""
         This app uses a MobileNetV2-based deep learning model to classify images into two categories:
-        - **Categorized**: Images that are properly categorized
-        - **Uncategorized**: Images that need categorization
+        - **Star Seller**: Images that are properly categorized
+        - **Underrated**: Images that need categorization
         
         The model was trained on a custom dataset and achieves good accuracy in distinguishing between these categories.
         """)
