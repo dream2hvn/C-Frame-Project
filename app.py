@@ -109,9 +109,10 @@ def main():
         - **Star Seller**: High-performing, attractive product listings ⭐
         - **Underrated**: Items with potential but lacking visibility 🔍
         - **Random Pictures**: Images that do not fit specific categories 📷
-        
+
         The model was trained on a custom dataset and achieves good accuracy in distinguishing between these categories.
         """)
+
 
 if __name__ == "__main__":
     main()
