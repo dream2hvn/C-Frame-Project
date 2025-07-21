@@ -101,13 +101,14 @@ def main():
             st.write("Please make sure you upload a valid image file.")
 
     # Add information about the model
-    with st.expander("Mengenai Aplikasi Ini"):
+    with st.expander("ℹ️Mengenai Aplikasi Ini"):
         st.write("""
-        Aplikasi ini memanfaatkan Arsitektur MobileNetV2 dalam pembangunan model AI untuk mengklasifikasikan gambar menjadi dua kategori:
-        - **Star Seller**: Foto Yang akan laku di platform Fotoyu
-        - **Underrated**: Kategori foto dengan indeks penjualan rendah di platform Fotoyu
+        Aplikasi ini memanfaatkan AI berbasis MobileNetV2 untuk memprediksi daya jual foto secara otomatis. Gambar akan diklasifikasikan ke dalam dua kategori:
+        - **🔸Star Seller**: Foto dengan potensi tinggi untuk menarik pembeli di platform Fotoyu
+        - **🔹Underrated**: Foto dengan daya tarik penjualan rendah berdasarkan hasil riset
         
-        Model ini dilatih pada kumpulan data khusus dan mencapai akurasi yang baik dalam membedakan antara kategori-kategori ini.
+        Dengan model yang dilatih dari data terkurasi, aplikasi ini membantu Anda memilih konten visual terbaik untuk meningkatkan penjualan secara cerdas dan efisien.
+        🎯 Tujuan utama dari aplikasi ini adalah membantu para fotografer mengoptimalkan konten mereka agar lebih menjual dan menarik perhatian user platform Fotoyu.
         """)
 
 if __name__ == "__main__":
