@@ -51,8 +51,8 @@ def preprocess_image(img):
 
 def main():
     # Header
-    st.title("C-Frame Image Classifier 🖼️")
-    st.write("Upload Gambar Untuk Mendapatkan Hasil prediksi")
+    st.title("C-Frame Image Classifier🖼️")
+    st.write("Upload Gambar Untuk Mendapatkan Hasil Prediksi")
 
     # Load model
     try:
@@ -63,7 +63,7 @@ def main():
         return
 
     # File uploader
-    uploaded_file = st.file_uploader("Pilih Gambar...", type=["jpg", "jpeg", "png"])
+    uploaded_file = st.file_uploader("Pilih Gambar!!!", type=["jpg", "jpeg", "png"])
 
     if uploaded_file is not None:
         try:
@@ -91,8 +91,8 @@ def main():
                     st.progress(float(confidence) / 100)
 
                     # Additional information based on prediction
-                    if predicted_class == 'Categorized':
-                        st.success("This image appears to be well-categorized!")
+                    if predicted_class == 'Star Seller':
+                        st.success("This image appears to be Star Seller!")
                     else:
                         st.warning("This image might need proper categorization.")
 
@@ -101,13 +101,13 @@ def main():
             st.write("Please make sure you upload a valid image file.")
 
     # Add information about the model
-    with st.expander("About this app"):
+    with st.expander("Mengenai Aplikasi Ini"):
         st.write("""
-        This app uses a MobileNetV2-based deep learning model to classify images into two categories:
-        - **Star Seller**: Images that are properly categorized
-        - **Underrated**: Images that need categorization
+        Aplikasi ini memanfaatkan Arsitektur MobileNetV2 dalam pembangunan model AI untuk mengklasifikasikan gambar menjadi dua kategori:
+        - **Star Seller**: Foto Yang akan laku di platform Fotoyu
+        - **Underrated**: Kategori foto dengan indeks penjualan rendah di platform Fotoyu
         
-        The model was trained on a custom dataset and achieves good accuracy in distinguishing between these categories.
+        Model ini dilatih pada kumpulan data khusus dan mencapai akurasi yang baik dalam membedakan antara kategori-kategori ini.
         """)
 
 if __name__ == "__main__":
