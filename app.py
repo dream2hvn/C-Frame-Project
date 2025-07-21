@@ -92,7 +92,7 @@ def main():
 
                     # Additional information based on prediction
                     if predicted_class == 'Star Seller':
-                        st.success("This image appears to be Star Seller!")
+                        st.success("🎉 Great pick! This image is likely to stand out and sell as a Star Seller.")
                     else:
                         st.warning("This image might need proper categorization.")
 
