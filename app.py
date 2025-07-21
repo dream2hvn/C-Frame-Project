@@ -94,7 +94,7 @@ def main():
                     if predicted_class == 'Star Seller':
                         st.success("🎉 Great pick! This image is likely to stand out and sell as a Star Seller.")
                     else:
-                        st.warning("This image might need proper categorization.")
+                        st.warning("🤔Hmm, Gambar ini termasuk kategori Underrated dengan daya tarik pasar yang kurang menarik.")
 
         except Exception as e:
             st.error(f"Error processing image: {str(e)}")
