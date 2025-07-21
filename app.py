@@ -104,11 +104,12 @@ def main():
     with st.expander("ℹ️Mengenai Aplikasi Ini"):
         st.write("""
         Aplikasi ini memanfaatkan AI berbasis MobileNetV2 untuk memprediksi daya jual foto secara otomatis. Gambar akan diklasifikasikan ke dalam dua kategori:
-        - **🔸Star Seller**: Foto dengan potensi tinggi untuk menarik pembeli di platform Fotoyu
-        - **🔹Underrated**: Foto dengan daya tarik penjualan rendah berdasarkan hasil riset
+        - **⭐ Star Seller**: Foto dengan potensi tinggi untuk menarik pembeli di platform Fotoyu
+        - **⚠️ Underrated**: Foto dengan daya tarik penjualan rendah berdasarkan hasil riset
         
-        Dengan model yang dilatih dari data terkurasi, aplikasi ini membantu Anda memilih konten visual terbaik untuk meningkatkan penjualan secara cerdas dan efisien.
-        🎯 Tujuan utama dari aplikasi ini adalah membantu para fotografer mengoptimalkan konten mereka agar lebih menjual dan menarik perhatian user platform Fotoyu.
+        💡 Dengan pelatihan berbasis data terkurasi, aplikasi ini membantu Anda memilih konten visual terbaik untuk mengoptimalkan strategi pemasaran.
+        
+        🎯 Tujuan utamanya adalah mendukung fotografer dan pelaku bisnis dalam menghasilkan konten yang lebih menjual dan relevan secara komersial di platform digital.
         """)
 
 if __name__ == "__main__":
