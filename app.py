@@ -92,7 +92,7 @@ def main():
 
                     # Additional information based on prediction
                     if predicted_class == 'Star Seller':
-                        st.success("🎉 Pilihan yang bagus! Gambar ini memiliki persentase yang besar untuk terjual. SEGERA UPLOAD!!")
+                        st.success("🎉 Pilihan yang bagus! Gambar ini memiliki persentase yang besar untuk terjual. Segera Upload!!")
                     else:
                         st.warning("🤔Hmm, Gambar ini termasuk kategori Underrated dengan daya tarik pasar yang kurang menarik.")
 
