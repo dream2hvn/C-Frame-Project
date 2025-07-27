@@ -101,7 +101,7 @@ def main():
             st.write("Please make sure you upload a valid image file.")
 
     # Add information about the model
-    with st.expander("🔍About This APP"):
+    with st.expander("🔍 About  This  App"):
         st.write("""
         🚀 Aplikasi ini memanfaatkan AI berbasis MobileNetV2 untuk memprediksi daya jual foto secara otomatis. Gambar akan diklasifikasikan ke dalam dua kategori:
         - **Star Seller**: Foto dengan potensi tinggi untuk menarik pembeli di platform Fotoyu
