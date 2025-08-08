@@ -35,7 +35,7 @@ st.markdown("""
 @st.cache_resource
 def load_classifier():
     """Load the trained model"""
-    return load_model('C-frame80.h5')
+    return load_model('c-frame_fine_tuned.keras')
 
 def preprocess_image(img):
     """Preprocess the uploaded image for model prediction"""
