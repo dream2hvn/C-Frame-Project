@@ -63,7 +63,7 @@ def main():
         return
 
     # File uploader
-    uploaded_file = st.file_uploader("Pilih Gambar!!!", type=["jpg", "jpeg", "png"])
+    uploaded_file = st.file_uploader("Pilih Gambar!!!", type=["jpg", "jpeg", "png", "webp"])
 
     if uploaded_file is not None:
         try:
